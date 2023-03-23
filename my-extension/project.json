@@ -1,0 +1,81 @@
+{
+  "name": "my-extension",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "./my-extension/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@codeimpact/nx-browser-extension:build",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/my-extension/build",
+        "backgroundDir": "src/pages/background/index.ts",
+        "manifestVersion": 3
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@codeimpact/nx-browser-extension:build",
+      "defaultConfiguration": "development",
+      "options": {
+        "outputPath": "dist/my-extension/build",
+        "backgroundDir": "src/pages/background/index.ts",
+        "manifestVersion": 3,
+        "buildTarget": "test-test:build",
+        "watch": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "my-extension:build:development",
+          "hmr": true
+        },
+        "production": {
+          "buildTarget": "my-extension:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "test": {
+      "executor": "@nrwl/vite:test",
+      "outputs": [
+        "coverage/my-extension"
+      ],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../coverage/my-extension"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "./my-extension/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "package": {
+      "executor": "@codeimpact/nx-browser-extension:package",
+      "dependsOn": [
+        "build"
+      ],
+      "options": {
+        "sourceDir": "dist/my-extension/build",
+        "artifactsDir": "dist/my-extension/package"
+      }
+    }
+  },
+  "tags": []
+}
