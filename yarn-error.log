@@ -1,0 +1,91 @@
+Arguments: 
+  /Users/ming/.nvm/versions/node/v18.14.0/bin/node /Users/ming/.nvm/versions/node/v18.14.0/bin/yarn
+
+PATH: 
+  /Users/ming/.deno/bin:/Users/ming/.nvm/versions/node/v18.14.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/ming/.cargo/bin:/Users/ming/.cargo/bin:/Users/ming/.foundry/bin:/usr/local/go/bin:/Users/ming/go/bin:/Users/ming/Library/Python/3.8/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.14.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/ming/Library/Caches/Yarn/v6/npm-minimatch-3.0.5-4da8f1290ee0f0f8e83d60ca69f8f134068604a3-integrity/node_modules/minimatch/README.md' -> '/Volumes/userData/src/Chrome/my-workspace/node_modules/@nrwl/js/node_modules/minimatch/README.md'
+
+npm manifest: 
+  {
+    "name": "my-workspace",
+    "version": "1.0.1",
+    "main": "index.js",
+    "author": "Ming-der Wang",
+    "license": "MIT",
+    "devDependencies": {
+      "@babel/preset-react": "^7.14.5",
+      "@codeimpact/nx-browser-extension": "^0.0.4",
+      "@nrwl/cypress": "15.8.7",
+      "@nrwl/eslint-plugin-nx": "15.8.7",
+      "@nrwl/jest": "15.8.7",
+      "@nrwl/js": "15.8.7",
+      "@nrwl/linter": "15.8.7",
+      "@nrwl/react": "^15.8.7",
+      "@nrwl/vite": "15.8.7",
+      "@nrwl/webpack": "15.8.7",
+      "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
+      "@svgr/webpack": "^6.1.2",
+      "@testing-library/react": "14.0.0",
+      "@types/chrome": "^0.0.181",
+      "@types/firefox-webext-browser": "latest",
+      "@types/jest": "^29.4.0",
+      "@types/node": "18.14.2",
+      "@types/react": "18.0.28",
+      "@types/react-dom": "18.0.11",
+      "@types/webextension-polyfill": "latest",
+      "@typescript-eslint/eslint-plugin": "^5.36.1",
+      "@typescript-eslint/parser": "^5.36.1",
+      "@vitejs/plugin-react": "^3.0.0",
+      "@vitest/coverage-c8": "~0.25.8",
+      "@vitest/ui": "^0.25.8",
+      "babel-jest": "^29.4.1",
+      "cypress": "^12.2.0",
+      "eslint": "~8.15.0",
+      "eslint-config-prettier": "8.1.0",
+      "eslint-plugin-cypress": "^2.10.3",
+      "eslint-plugin-import": "2.27.5",
+      "eslint-plugin-jsx-a11y": "6.7.1",
+      "eslint-plugin-react": "7.32.2",
+      "eslint-plugin-react-hooks": "4.6.0",
+      "jest": "^29.4.1",
+      "jest-environment-jsdom": "^29.4.1",
+      "jsdom": "~20.0.3",
+      "nx": "15.8.7",
+      "parcel-bundler": "^1.12.5",
+      "react-refresh": "^0.10.0",
+      "react-test-renderer": "18.2.0",
+      "ts-jest": "^29.0.5",
+      "ts-node": "10.9.1",
+      "url-loader": "^4.1.1",
+      "vite": "^4.2.1",
+      "vite-plugin-eslint": "^1.8.1",
+      "vite-tsconfig-paths": "^4.0.2",
+      "vitest": "^0.25.8",
+      "web-ext": "latest",
+      "web-ext-types": "latest"
+    },
+    "dependencies": {
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
+      "tslib": "^2.3.0",
+      "typescript": "^5.0.2",
+      "webextension-polyfill": "latest"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

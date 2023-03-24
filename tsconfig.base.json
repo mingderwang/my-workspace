@@ -17,7 +17,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "common-ui": [
+        "common-ui/src/index.ts"
+      ],
+      "products": [
+        "products/src/index.ts"
+      ]
+    }
   },
   "exclude": [
     "node_modules",
